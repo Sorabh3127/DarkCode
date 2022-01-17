@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>DarkCode - Enlightening the Demon Inside </title>
+    <link rel="shortcut icon" href="/fav.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                    <path
+                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
+                    <path
+                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
+                </svg> DarkCode</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Techie
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Android Development</a></li>
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                            <li><a class="dropdown-item" href="#">Write for Us</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                    <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signUpModal">Signup</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- login-Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to iCoder</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- signUp-Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signUpModalLabel">Get an iCoder Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="CPassword1" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="CPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.connectiondemocenter.com/wp-content/uploads/2016/05/apple-slide.png"
+                    width="1920px" height="400px" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to iCoder</h2>
+                    <p>Technology, development, Hacking</p>
+                    <button type="button" class="btn btn-danger">Technology</button>
+                    <button type="button" class="btn btn-primary">Web Development</button>
+                    <button type="button" class="btn btn-success">Hacking</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/random/1920x500/?program,code" width="1920px" height="400px"
+                    class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to iCoder</h2>
+                    <p>Technology, development, Hacking</p>
+                    <button type="button" class="btn btn-danger">Technology</button>
+                    <button type="button" class="btn btn-primary">Web Development</button>
+                    <button type="button" class="btn btn-success">Hacking</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://source.unsplash.com/random/1920x505/?hub,code" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Welcome to iCoder</h2>
+                    <p>Technology, development, Hacking</p>
+                    <button type="button" class="btn btn-danger">Technology</button>
+                    <button type="button" class="btn btn-primary">Web Development</button>
+                    <button type="button" class="btn btn-success">Hacking</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">World</strong>
+                        <h3 class="mb-0">Live coding Contests</h3>
+                        <div class="mb-1 text-muted">Jan 17</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="250" height="200"
+                            src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            alt="img">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Design</strong>
+                        <h3 class="mb-0">Global Designing</h3>
+                        <div class="mb-1 text-muted">Nov 11</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="250" height="200"
+                            src="data:image/jpeg;base64,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"
+                            alt="img">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container  my-4">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-danger">National</strong>
+                        <h3 class="mb-0">National Development </h3>
+                        <div class="mb-1 text-muted">Feb 24</div>
+                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
+                            lead-in to additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="250" height="200"
+                            src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f2da49df99ed4ddb7c00b9c%2FSoftware-developer-holds-a-pen-pointing-to-a-computer-screen--analyzing-the-code-%2F960x0.jpg%3Ffit%3Dscale"
+                            alt="img">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-warning">Coding</strong>
+                        <h3 class="mb-0">Learn To Earn</h3>
+                        <div class="mb-1 text-muted">Mar 21</div>
+                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                            additional content.</p>
+                        <a href="#" class="stretched-link">Continue reading</a>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img class="bd-placeholder-img" width="250" height="200"
+                            src="https://burst.shopifycdn.com/photos/coding-on-laptop.jpg?width=1200&format=pjpg&exif=0&iptc=0"
+                            alt="img">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="mx-5 col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+                    <path
+                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
+                    <path
+                        d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282z" />
+                </svg>
+          </a>
+          <span class="text-muted">© 2022 DarkCode, Inc</span>
+        </div>
+    
+        <ul class="nav mx-5 col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+      </footer>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
